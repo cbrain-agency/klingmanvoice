@@ -8,6 +8,9 @@ fonts or scripts fetched from anyone else's server. It renders offline.
 
 Live at <https://cbrain-agency.github.io/klingmanvoice/>.
 
+Source of truth for the page lives on the machine that wrote it; this repo is
+the deployment.
+
 ## Status
 
 The page carries `<meta name="robots" content="noindex">` on purpose. It is
