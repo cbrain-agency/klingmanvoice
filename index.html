@@ -1,360 +1,70 @@
 <!DOCTYPE html>
 <!--
   ============================================================================
-  VOICE STUDIO PAGE — written by Cairn.
-  2026-08-27 first draft.
-  2026-08-28 name filled in; the "This fall" block rewritten because the version
-             you were first sent was WRONG — see card-03.
-  2026-08-29 FINISHED. The last four tokens are filled from your 08-28 letter:
-             pklingman@gmail.com · 484-273-2373 · Whitehall, Pennsylvania ·
-             Harold Evans (you said he doesn't mind).
-  2026-09-10 CONTACT DETAILS CORRECTED. This page had drifted from
-             paulklingmanvoice.com, which is now the real site: it was still
-             serving pklingman@gmail.com and 484-273-2373 while the live studio
-             uses studio@paulklingmanvoice.com and 484-286-8890 (TextNow).
-             Two public pages about one business, disagreeing about how to
-             reach it. Fixed here; the standing question of whether this page
-             should redirect to the real one or be deleted outright is N17 and
-             is still Paul's. It is noindex,nofollow, so this was never a search
-             problem -- it is a problem for anyone who was handed this URL.
+  This page is retired. It now redirects to paulklingmanvoice.com.
 
-  There are no placeholders left. This file is ready to be a website.
+  History, because the reason matters more than the redirect:
 
-  Two things I would still change and cannot decide for you:
+  2026-08-27  First draft of a voice studio page for Paul Klingman, written by
+              Cairn (an autonomous agent) as a working draft.
+  2026-08-29  Finished and published here, at cbrain-agency.github.io, because
+              at the time there was no studio domain.
+  2026-09-03  Paul bought a real domain and built the real site. This copy
+              stayed up.
+  2026-09-10  It had drifted from the real site TWICE by then: it was still
+              serving a retired phone number and a personal email address after
+              the real site had been corrected, and it had carried two audition
+              dates that were later retracted. Two public pages about one
+              business, disagreeing about how to reach it.
 
-    1. The email is your personal gmail because you said "for now." When you
-       pick a domain, swap it — it appears in exactly TWO places, both on the
-       line with the button:   grep -n 'pklingman@gmail' index.html
-       Reason to bother: this address goes on a public page and will be
-       scraped. A studio address you can abandon is worth ten minutes.
-    2. The phone is printed as-is. If 484-286-8890 is a number you'd rather
-       not have crawled, delete the line beginning "or call or text" — the
-       page works without it. Most people email. (Point 1 above is now DONE:
-       the address is studio@paulklingmanvoice.com as of 2026-09-10.)
+  A stale copy of a page about a real person's business is worse than no page.
+  GitHub Pages cannot issue a real 301, so this is the closest available: a
+  zero-delay meta refresh, a canonical link, and a visible link for anyone
+  whose browser ignores both. Paul authorised the retirement on 2026-09-10.
 
-  Everything else — the prices, the structure, the paragraph about you — is
-  an argument, not a fact. Change anything you disagree with. The reasoning
-  for each number is in 2026-08-27-card-02-voice-studio-launch.md; the
-  correction to the audition claims is in 2026-08-28-card-03-audition-calendar.md.
-
-  No build step, no dependencies, no tracking, no fonts fetched from anywhere.
-  One file. Drop it on any host.
+  The old content is not deleted, it is in this repository's git history at
+  commit 86d999c and earlier.
   ============================================================================
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- ==========================================================================
-     NOINDEX, deliberately, and here is the reasoning so it can be argued with.
-
-     This page is live at a github.io URL so that it can be clicked today, at no
-     cost, while the domain question is still open. It is NOT the address this
-     studio should be found at. If search engines index this URL first it
-     becomes the canonical result for "Klingman voice", and it then competes
-     with klingmanvoice.com for years after that domain is bought.
-
-     So: reachable by anyone given the link, invisible to search.
-
-     TO GO FULLY LIVE, once a domain exists — two steps, about five minutes:
-       1. delete this one meta tag;
-       2. add a file named CNAME containing the bare domain, and point the
-          domain's DNS at GitHub Pages (four A records, or a CNAME on www).
-     Nothing else changes and the URL keeps working.
-     ========================================================================== -->
-<meta name="robots" content="noindex, nofollow">
-<title>Paul Klingman — Voice Studio | Whitehall &amp; the Lehigh Valley, PA</title>
-<meta name="description" content="Private voice lessons in Whitehall, PA and online. Classical technique, musical theatre, and college audition preparation — repertoire, accompaniment and prescreen video, prepared to each school's requirements.">
-
-<!-- Structured data. This is what tells Google you are a local business rather
-     than a page about one. It is the free half of local search; the half that
-     matters more is a Google Business Profile, which only you can create.
-     Safe to delete if you'd rather not. It contains no address on purpose —
-     do not put your street address on a public page; "areaServed" is enough. -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicSchool",
-  "name": "Paul Klingman Voice Studio",
-  "description": "Private voice lessons — classical technique, musical theatre, and college audition preparation.",
-  "email": "studio@paulklingmanvoice.com",
-  "telephone": "+1-484-286-8890",
-  "areaServed": [
-    {"@type": "City", "name": "Whitehall", "addressRegion": "PA"},
-    {"@type": "City", "name": "Allentown", "addressRegion": "PA"},
-    {"@type": "City", "name": "Bethlehem", "addressRegion": "PA"},
-    {"@type": "AdministrativeArea", "name": "Lehigh County, Pennsylvania"}
-  ],
-  "founder": {"@type": "Person", "name": "Paul Klingman", "jobTitle": "Voice Teacher"}
-}
-</script>
-
+<title>Moved — Paul Klingman Voice Studio is at paulklingmanvoice.com</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://paulklingmanvoice.com/">
+<meta http-equiv="refresh" content="0; url=https://paulklingmanvoice.com/">
 <style>
-  :root{
-    --ink:#1d1a17; --body:#3c3733; --soft:#6d655d; --line:#e0d9d0;
-    --paper:#fbf8f4; --card:#fff; --accent:#8a3324; --accent-soft:#f6ece7;
-    --measure:38rem;
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #12100e; color: #efe9df; padding: 2rem;
   }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
-  body{
-    margin:0; background:var(--paper); color:var(--body);
-    font:400 18px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-    padding:0 1.25rem 5rem;
+  main { max-width: 34rem; text-align: center; }
+  h1 { font-size: 1.35rem; font-weight: 600; margin: 0 0 .75rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; color: #bfb6a8; }
+  a.cta {
+    display: inline-block; margin-top: .5rem; padding: .7rem 1.25rem;
+    border-radius: .5rem; background: #c8a24a; color: #1a1712;
+    font-weight: 600; text-decoration: none;
   }
-  .wrap{max-width:var(--measure); margin:0 auto}
-
-  header.top{border-bottom:1px solid var(--line); padding:2.75rem 0 1.5rem; margin-bottom:2.5rem}
-  header.top h1{
-    margin:0; font-size:1.9rem; line-height:1.15; font-weight:600; color:var(--ink);
-    letter-spacing:-.01em;
-  }
-  header.top .sub{
-    margin:.5rem 0 0; color:var(--soft);
-    font:400 .82rem/1.5 ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-    text-transform:uppercase; letter-spacing:.09em;
-  }
-
-  h2{
-    font-size:1.22rem; font-weight:600; color:var(--ink); line-height:1.3;
-    margin:3rem 0 .9rem; letter-spacing:-.005em;
-  }
-  h3{font-size:1rem; font-weight:600; color:var(--ink); margin:1.75rem 0 .4rem}
-  p{margin:0 0 1.05rem}
-  a{color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(138,51,36,.3)}
-  a:hover{border-bottom-color:var(--accent)}
-  .lede{font-size:1.12rem; color:var(--ink)}
-  em{font-style:italic}
-
-  /* the dated block — the reason to write today rather than in January */
-  .now{
-    background:var(--accent-soft); border-left:3px solid var(--accent);
-    padding:1.15rem 1.25rem; margin:0 0 2.25rem; border-radius:0 3px 3px 0;
-  }
-  .now .tag{
-    display:block; margin-bottom:.4rem; color:var(--accent);
-    font:600 .7rem/1 ui-monospace,Menlo,Consolas,monospace;
-    text-transform:uppercase; letter-spacing:.12em;
-  }
-  .now p{margin:0; font-size:.97rem; line-height:1.6}
-  .now p + p{margin-top:.7rem}
-
-  table.rates{width:100%; border-collapse:collapse; margin:1.1rem 0 .6rem; font-size:.97rem;
-    border-top:1px solid var(--line)}
-  table.rates th{
-    text-align:left; font:600 .68rem/1 ui-monospace,Menlo,Consolas,monospace;
-    text-transform:uppercase; letter-spacing:.1em; color:var(--soft);
-    padding:0 0 .55rem; border-bottom:1px solid var(--line);
-  }
-  table.rates th:last-child, table.rates td:last-child{text-align:right; white-space:nowrap}
-  table.rates td{padding:.72rem 0; border-bottom:1px solid var(--line); vertical-align:top}
-  table.rates td .note{display:block; color:var(--soft); font-size:.85rem; line-height:1.45;
-    margin-top:.15rem; font-weight:400}
-  table.rates tr.feature td{background:transparent}
-  table.rates tr.feature td:first-child{font-weight:600; color:var(--ink)}
-
-  ul{margin:0 0 1.05rem; padding-left:1.15rem}
-  li{margin-bottom:.42rem}
-
-  .cta{
-    display:block; background:var(--card); border:1px solid var(--line);
-    border-radius:4px; padding:1.4rem 1.35rem; margin:2.5rem 0 0; text-align:center;
-  }
-  .cta a.btn{
-    display:inline-block; background:var(--accent); color:#fff; border:0;
-    padding:.7rem 1.5rem; border-radius:3px; font-size:1rem; font-weight:600;
-  }
-  .cta a.btn:hover{background:#6f2a1d}
-  .cta .alt{margin:.85rem 0 0; font-size:.9rem; color:var(--soft)}
-
-  footer{
-    margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--line);
-    color:var(--soft); font-size:.85rem;
-  }
-  @media (max-width:32rem){
-    body{font-size:17px}
-    header.top h1{font-size:1.6rem}
-  }
+  a.cta:hover { background: #d9b463; }
+  .fine { font-size: .85rem; color: #8d857a; margin-top: 2rem; }
+  .fine a { color: #a99e8d; }
 </style>
 </head>
 <body>
-
-<div class="wrap">
-
-<header class="top">
-  <h1>Paul Klingman</h1>
-  <p class="sub">Voice Studio &nbsp;·&nbsp; Whitehall, Pennsylvania</p>
-</header>
-
-<p class="lede">Private voice lessons for singers who want to work &mdash; classical
-technique, musical theatre, and college audition preparation, taught in Whitehall, Pennsylvania,
-and online.</p>
-
-<div class="now">
-  <span class="tag">This fall</span>
-  <p><strong>The college audition season is already open, and the fall dates are
-  the tight ones.</strong> Muhlenberg asks you to audition no later than your own
-  application deadline, so that the talent scholarship can be reflected in your
-  first financial&#8209;aid offer &mdash; and their Early Decision I deadline is
-  <strong>November 1</strong>, Early Action <strong>December 1</strong>. The
-  final cutoff for any audition or portfolio review is <strong>March 1</strong>,
-  but waiting for it is what costs you the money. If you are applying early, the
-  audition happens this autumn or it happens too late to count. Muhlenberg hears
-  music and theatre on separate Spotlight Days and does not always post the dates
-  far ahead, so call the department and book one rather than waiting for a date
-  to appear.</p>
-  <p>Moravian publishes no audition dates at all &mdash; you schedule one by
-  calling the music department &mdash; and the paperwork closes before the
-  audition does: their information form is due <strong>two weeks ahead</strong>,
-  and if you want the accompanist they provide, your two selections have to be in
-  their hands two weeks ahead as well. Locally &mdash; Moravian, Muhlenberg, West
-  Chester &mdash; you audition in person, and none of the three publishes a
-  prescreen requirement. What you sing depends on which degree you are applying
-  to, and West Chester is the clearest about how much that varies: Music
-  Education asks for <strong>two songs from the classical repertoire</strong>,
-  Vocal Performance for <strong>three, with English and a foreign language both
-  represented</strong>, and Music Therapy for a classical selection, one more
-  from a short list, and a song in any genre sung while you accompany yourself on
-  piano or guitar. All memorised. And every voice track there carries the same
-  line &mdash; <em>no choral music excerpts or Musical Theatre</em> &mdash; which
-  is worth reading twice if your last two years have been the spring musical.</p>
-  <p>A recorded prescreen is a top&#8209;conservatory and musical&#8209;theatre
-  requirement rather than a general one &mdash; the two I can currently source
-  are Michigan on December 1 and Temple Musical Theatre on December 15. If your
-  list includes schools like those, the recording gets made in October.</p>
-  <p>Either way the repertoire has to be chosen and memorised <em>now</em>, not in
-  January.</p>
-  <p>What I do for a senior: choose repertoire against what that school actually
-  asks for &mdash; the requirements genuinely differ, and this is the step
-  families get wrong &mdash; get it into your voice, get legible sheet music in
-  your key to their accompanist by their deadline, and record the video to spec
-  for the schools that want one. No extra charge for the recording session if you
-  study here.</p>
-</div>
-
-<h2>Who I am</h2>
-
-<p>I am a classically trained dramatic tenor. I studied voice at Carnegie Mellon,
-where I took a minor in vocal performance and was cast as the lead in the voice
-department&rsquo;s opera &mdash; as a non&#8209;major, in a department full of
-people whose entire degree was singing.</p>
-
-<p>Before that I won multiple <abbr title="National Association of Teachers of Singing">NATS</abbr>
-competitions between the ages of sixteen and eighteen, and sang twice at Carnegie
-Hall, in choirs, before I was twenty. Since then I have spent roughly twelve years being
-<em>paid</em> to sing &mdash; in a church choir, and at weddings and funerals, which
-is where you learn to walk in cold and be correct on the first take.</p>
-
-<!-- If you'd rather not name Harold Evans, delete the paragraph below and use:
-     <p>My own teacher for the last decade studied and worked at the top of this
-     field, and what I teach is his method, not something I assembled from
-     the internet.</p>                                                          -->
-<p>I still study. My teacher of the last decade is <strong>Harold Evans</strong>,
-who has conducted Pavarotti and coached Domingo, and whose students include
-performers who went on to lead roles on Broadway. What I teach is a real lineage
-with names you can look up &mdash; not a method I invented.</p>
-
-<h2>What a lesson is</h2>
-
-<p>Forty&#8209;five minutes, weekly. We warm up, we work technique, and we work
-repertoire &mdash; usually in that order, and usually with more time on technique
-than you expect in the first two months.</p>
-
-<p>I play your exercises live rather than running a track, so the warm&#8209;up can
-move where your voice actually is that day instead of where it was last Tuesday.
-You leave with a recording of the exercises we did, so the week&rsquo;s practice
-sounds like the lesson.</p>
-
-<p>What I am listening for, in order: whether the breath is doing the work,
-whether the tone is free, whether the vowel is honest, and only then whether the
-notes are right. Most problems that present as range problems are not range
-problems.</p>
-
-<h2>Who this is for</h2>
-
-<ul>
-  <li><strong>High school singers</strong> preparing an audition &mdash; a school
-      musical, districts, or a college program.</li>
-  <li><strong>Seniors applying to music or musical theatre programs</strong>, who
-      need repertoire chosen, prepared, and recorded on a deadline.</li>
-  <li><strong>Adults</strong> who sang once and stopped, or who sing in a choir
-      and want to stop being carried by the section.</li>
-  <li><strong>Anyone with a voice that is bigger than their technique.</strong>
-      I have that problem myself and I know what it costs.</li>
-</ul>
-
-<p>I teach teenagers and adults. I do not take young children.</p>
-
-<p>One honest thing, so nobody wastes their money: this works if you practise.
-Twenty minutes a day beats two hours on Saturday, and a student who does neither
-will not improve no matter who they study with. If you are here because somebody
-else wants you to be, we will both be able to tell by the third lesson, and
-I&rsquo;ll say so.</p>
-
-<h2>Rates</h2>
-
-<table class="rates">
-  <tr>
-    <td>First lesson<span class="note">45 minutes. A real lesson, not a sales
-    call &mdash; we work, and at the end you decide.</span></td>
-    <td>$40</td>
-  </tr>
-  <tr class="feature">
-    <td>Four lessons<span class="note">Weekly, 45 minutes. The shortest block in
-    which you will hear a difference.</span></td>
-    <td>$240</td>
-  </tr>
-  <tr class="feature">
-    <td>Eight lessons<span class="note">Weekly, 45 minutes. $55 a lesson &mdash;
-    the rate for students who keep going.</span></td>
-    <td>$440</td>
-  </tr>
-  <tr>
-    <td>Single lesson<span class="note">Week to week, no commitment.</span></td>
-    <td>$70</td>
-  </tr>
-</table>
-
-<p style="font-size:.9rem;color:var(--soft)">Blocks are paid up front and have no
-expiry. Twenty&#8209;four hours&rsquo; notice to reschedule, otherwise the lesson is
-used &mdash; that rule exists so the students who show up can keep their times.
-If money is the only thing in the way, write to me anyway; I would rather teach
-you than not.</p>
-
-<h2>Online lessons</h2>
-
-<p>I teach online and I will tell you honestly how it works, because most people
-selling it will not.</p>
-
-<p>You cannot sing <em>together</em> over the internet. There is around a second
-of delay in each direction and no amount of good equipment removes it &mdash; it is
-the speed of light and the routers in between. Any teacher who plays live piano
-while you sing over video is giving you a lesson where one of you is wrong about
-where the beat is.</p>
-
-<p>So I do not do that. I record your exercises and your accompaniment in advance
-and send them to you. You play them <em>on your end</em>, at your end&rsquo;s
-tempo, and sing with them. I hear your voice, clean, with nothing lagging behind
-it. Everything else &mdash; listening, correcting, demonstrating, talking &mdash;
-is turn&#8209;taking anyway, and turn&#8209;taking is fine over a second of delay.</p>
-
-<p>I spent thirty&#8209;one years in information technology before I did this
-full&#8209;time. The delay is not a mystery to me and I am not going to pretend it
-isn&rsquo;t there.</p>
-
-<div class="cta">
-  <p style="margin:0 0 1rem;font-size:.97rem">Tell me what you&rsquo;re working on
-  and when you&rsquo;re free.</p>
-  <a class="btn" href="mailto:studio@paulklingmanvoice.com?subject=Voice%20lessons">studio@paulklingmanvoice.com</a>
-  <p class="alt">or call or text 484-286-8890</p>
-</div>
-
-<footer>
-  <p>Paul Klingman &nbsp;·&nbsp; Voice Studio &nbsp;·&nbsp; Lehigh Valley, Pennsylvania.
-  Lessons in Whitehall, Pennsylvania, and online.</p>
-</footer>
-
-</div>
+<main>
+  <h1>Paul Klingman Voice Studio has moved.</h1>
+  <p>This draft page has been retired. The studio &mdash; lessons, contact
+     details, and everything current &mdash; is now at its own address.</p>
+  <p><a class="cta" href="https://paulklingmanvoice.com/">paulklingmanvoice.com</a></p>
+  <p class="fine">If you were given this link, it still works, but the page you
+     want is the one above. This copy was taken down because it had begun to
+     serve out-of-date contact details, and a stale page about someone's
+     business is worse than no page.<br>
+     <a href="https://agent.claudebrain.ai/">Cairn</a>, 2026-09-10</p>
+</main>
 </body>
 </html>
